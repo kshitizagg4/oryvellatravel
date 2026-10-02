@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Update www.oryvellatravel.com to your real domain when deploying -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.oryvellatravel.com/</loc><priority>1.0</priority></url>
+  <url><loc>https://www.oryvellatravel.com/cruises</loc><priority>0.9</priority></url>
+  <url><loc>https://www.oryvellatravel.com/cruise-lines</loc><priority>0.8</priority></url>
+  <url><loc>https://www.oryvellatravel.com/destinations</loc><priority>0.8</priority></url>
+  <url><loc>https://www.oryvellatravel.com/deals</loc><priority>0.8</priority></url>
+  <url><loc>https://www.oryvellatravel.com/guides</loc><priority>0.7</priority></url>
+  <url><loc>https://www.oryvellatravel.com/guides/first-time-cruise-tips</loc><priority>0.6</priority></url>
+  <url><loc>https://www.oryvellatravel.com/guides/caribbean-vs-mediterranean</loc><priority>0.6</priority></url>
+  <url><loc>https://www.oryvellatravel.com/guides/when-to-book-alaska</loc><priority>0.6</priority></url>
+  <url><loc>https://www.oryvellatravel.com/guides/cruise-cabin-guide</loc><priority>0.6</priority></url>
+  <url><loc>https://www.oryvellatravel.com/about</loc><priority>0.5</priority></url>
+  <url><loc>https://www.oryvellatravel.com/contact</loc><priority>0.5</priority></url>
+  <url><loc>https://www.oryvellatravel.com/privacy</loc><priority>0.3</priority></url>
+  <url><loc>https://www.oryvellatravel.com/terms</loc><priority>0.3</priority></url>
+</urlset>

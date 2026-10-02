@@ -1,0 +1,35 @@
+# Render Blueprint — deploys the Node API.
+# Dashboard → New → Blueprint → point at this repo, then set the
+# secret env vars (DB_PASSWORD, ADMIN_KEY) in the Render dashboard.
+services:
+  - type: web
+    name: travelone-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/index.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_DRIVER
+        value: mssql
+      - key: DB_SERVER
+        value: your-server.database.windows.net   # Azure SQL host
+      - key: DB_PORT
+        value: "1433"
+      - key: DB_NAME
+        value: CruiseDB
+      - key: DB_USER
+        value: cruiseadmin                        # Azure SQL admin user
+      - key: DB_PASSWORD
+        sync: false                                # set in dashboard
+      - key: DB_ENCRYPT
+        value: "true"                              # required by Azure SQL
+      - key: DB_TRUST_CERT
+        value: "false"                             # required by Azure SQL
+      - key: CLIENT_ORIGIN
+        value: https://oryvellatravel.com
+      - key: ADMIN_KEY
+        sync: false                                # set in dashboard — use a strong value
